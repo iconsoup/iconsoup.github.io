@@ -23,7 +23,7 @@ header .logo a {
 header nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: #696969;
   font-size: 14px;
 }
 .container {
@@ -51,11 +51,12 @@ header nav a {
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 14px;
-  color: #000;
+  font-weight: bold;
+  color: #696969;
 }
 .sidebar li.active {
   font-weight: bold;
-  color: #0070f3;
+  color: #00ac48;
 }
 .content {
   flex: 1;
@@ -75,8 +76,8 @@ header nav a {
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(20vw, 1fr)
-  ); /* 뷰포트 너비의 20% */
+    minmax(16vw, 1fr)
+  ); /* 뷰포트 너비의 16% */
   gap: 2vw; /* 반응형 간격 */
 }
 .icon-card {
@@ -85,34 +86,112 @@ header nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4vw; /* 뷰포트 기준 padding */
+  padding: 1vw; /* 뷰포트 기준 padding */
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
 }
 .icon-card img {
-  width: 6vw; /* 반응형 크기 */
-  height: 6vw;
+  width: 16vw; /* 반응형 크기 */
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 .icon-card:hover {
   background: #f9f9f9;
   transform: scale(1.05);
 }
-/* .icon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 15px;
+
+/* 모바일 환경 */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  header .logo a {
+    font-size: 20px;
+  }
+  header nav a {
+    font-size: 16px;
+  }
+
+  /* 사이드바를 상단 네비게이션 바처럼 변경 */
+  .sidebar {
+    width: 100vw;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: auto;
+    align-items: center;
+    padding: 10px 20px; /* header와 동일한 좌우 패딩 */
+  }
+  .sidebar input {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #fff;
+    order: 0; /* input이 맨 위에 오도록 */
+    align-self: stretch;
+  }
+  .sidebar {
+    flex-direction: column; /* input이 ul 위에 오도록 */
+  }
+  .sidebar ul {
+    order: 1;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  .sidebar li {
+    margin-bottom: 0;
+    margin-right: 16px;
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  /* 아이콘 그리드 */
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개 */
+    gap: 4vw; /* 모바일에서 간격 조금 더 넓게 */
+  }
+  .icon-card {
+    border: 1px solid #eee;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw; /* 모바일에서 padding 증가 */
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .icon-card img {
+    width: 24vw; /* 3개씩 보이도록 크기 조정 */
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+  }
+  .icon-card:hover {
+    background: #f9f9f9;
+    transform: scale(1.05);
+  }
 }
-.icon-card {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-} 
-.icon-card img {
-  width: 32px;
-  height: 32px;
-} */
