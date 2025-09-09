@@ -6,10 +6,10 @@ const iconsData = [
     nameEng: "macaron",
   },
   {
-    catKor: "기호",
-    catEng: "symbols",
-    nameKor: "하트두개",
-    nameEng: "two-hearts",
+    catKor: "디저트",
+    catEng: "desserts",
+    nameKor: "컵케이크",
+    nameEng: "cupcake",
   },
   {
     catKor: "사물",
