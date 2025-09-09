@@ -1,9 +1,9 @@
 const iconsData = [
   {
-    catKor: "기호",
-    catEng: "symbols",
-    nameKor: "하트",
-    nameEng: "heart",
+    catKor: "디저트",
+    catEng: "desserts",
+    nameKor: "마카롱",
+    nameEng: "macaron",
   },
   {
     catKor: "기호",
