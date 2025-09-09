@@ -20,8 +20,8 @@ const iconsData = [
   {
     catKor: "사물",
     catEng: "objects",
-    nameKor: "연필",
-    nameEng: "pencil",
+    nameKor: "확성기",
+    nameEng: "megaphone",
   },
 ];
 
