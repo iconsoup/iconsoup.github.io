@@ -1,4 +1,10 @@
-# Icon SOUP 🍲🌲  
+## 📖 Language
+- [한국어 안내](#-icon-soup)
+- [English README](#-icon-soup-1)
+
+---
+
+# 🌲 Icon SOUP  
 **아이콘 숲**에 오신 걸 환영합니다!
 
 이곳은 3D 아이콘이 자라는 디지털 숲입니다.  
@@ -48,7 +54,7 @@ AI 기반 도구로 제작되었지만, 모든 아이콘은 사람이 직접 큐
 
 ---
 
-# Icon SOUP 🍲🌲  
+# 🍲 Icon SOUP  
 Welcome to **Icon SOUP**, where fresh 3D icons are always on the stove.
 
 This is a digital forest where 3D icons grow wild and free.  
@@ -84,4 +90,4 @@ Come by anytime and pick what you need — no login, no fuss.
 <br>
 <br>
 
-**Come pick your favorites from the Icon SOUP forest 🌲**
+**Come pick your favorites from the Icon SOUP 🍲**
