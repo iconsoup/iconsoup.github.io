@@ -104,13 +104,20 @@ header nav a {
 /* 모바일 환경 */
 @media (max-width: 600px) {
   body {
-    font-size: 16px;
+    font-size: 12px;
   }
   header .logo a {
     font-size: 20px;
   }
   header nav a {
     font-size: 16px;
+  }
+
+  .category-group h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
   }
 
   /* 사이드바를 상단 네비게이션 바처럼 변경 */
@@ -171,8 +178,18 @@ header nav a {
   /* 아이콘 그리드 */
   .icon-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개 */
-    gap: 4vw; /* 모바일에서 간격 조금 더 넓게 */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3등분, 넘침 방지 */
+    gap: 3vw;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .icon-card img {
+    width: 100%; /* 카드 내부에 딱 맞게 */
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
   }
   .icon-card {
     border: 1px solid #eee;
@@ -183,12 +200,6 @@ header nav a {
     padding: 2vw; /* 모바일에서 padding 증가 */
     cursor: pointer;
     transition: background 0.2s, transform 0.2s;
-  }
-  .icon-card img {
-    width: 24vw; /* 3개씩 보이도록 크기 조정 */
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
   }
   .icon-card:hover {
     background: #f9f9f9;
