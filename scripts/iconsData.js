@@ -17,6 +17,24 @@ const iconsData = [
     nameKor: "케이크",
     nameEng: "cake",
   },
+    {
+    catKor: "디저트",
+    catEng: "desserts",
+    nameKor: "스틱 아이스크림",
+    nameEng: "stick-ice-cream",
+  },
+    {
+    catKor: "디저트",
+    catEng: "desserts",
+    nameKor: "콘 아이스크림",
+    nameEng: "cone-ice-cream",
+  },
+    {
+    catKor: "디저트",
+    catEng: "desserts",
+    nameKor: "푸딩",
+    nameEng: "pudding",
+  },
   {
     catKor: "사물",
     catEng: "objects",
