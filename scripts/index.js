@@ -52,12 +52,13 @@ function renderIcons(filterCategory = null, searchTerm = "") {
     const catDiv = document.createElement("div");
     catDiv.className = "category-group";
     catDiv.innerHTML = `<h3>${catKor}</h3>`;
+
     const grid = document.createElement("div");
     grid.className = "icon-grid";
 
     groupedByCategory[catKor].forEach((icon) => {
       const img = document.createElement("img");
-      img.src = `images/${icon.catEng}/${icon.nameEng}/1.png`; // 경로 영문화
+      img.src = `icons/${icon.catEng}/${icon.nameEng}/1.png`; // 아이콘 이미지 경로로
       img.loading = "lazy";
 
       const card = document.createElement("div");
@@ -65,7 +66,7 @@ function renderIcons(filterCategory = null, searchTerm = "") {
       card.appendChild(img);
 
       card.addEventListener("click", () => {
-        const url = `/${icon.catEng}/${icon.nameEng}`;
+        const url = `/icons/${icon.catEng}/${icon.nameEng}/`;
         window.location.href = url;
       });
 
