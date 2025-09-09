@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Icon Gallery</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">MyLogo</div>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Notice</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <input type="text" id="searchInput" placeholder="Search icons..." />
+        <ul id="categoryList"></ul>
+      </aside>
+      <main class="content" id="content"></main>
+    </div>
+
+    <!-- JS 파일 불러오기 -->
+    <script src="scripts/iconsData.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </body>
+</html>
