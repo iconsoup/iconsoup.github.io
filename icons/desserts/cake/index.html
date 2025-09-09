@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--아이콘 명 변경-->
+    <title>아이콘 숲 - 케이크</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"><a href="/">Icon Soup</a></div>
+      <nav>
+        <a href="/about">About</a>
+        <a href="/notice">Notice</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <h2 id="categoryTitle"></h2>
+        <div class="icon-grid" id="iconGrid"></div>
+      </main>
+    </div>
+
+    <script>
+      // -----------------------------
+      const category = "디저트 (desserts)"; // 카테고리 이름
+      const name = "케이크 (cake)"; // 아이콘 이름
+      const maxNumber = 8;
+      // -----------------------------
+
+      const iconGrid = document.getElementById("iconGrid");
+      const categoryTitle = document.getElementById("categoryTitle");
+
+      categoryTitle.textContent = `${category} > ${name}`;
+
+      for (let i = 1; i <= maxNumber; i++) {
+        const div = document.createElement("div");
+        div.className = "icon-card";
+        div.innerHTML = `<img src="${i}.png" alt="${name}" loading="lazy">`;
+        iconGrid.appendChild(div);
+      }
+    </script>
+  </body>
+</html>
